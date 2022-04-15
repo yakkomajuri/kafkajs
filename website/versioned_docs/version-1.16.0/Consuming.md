@@ -44,7 +44,7 @@ The `eachMessage` handler provides a convenient and easy to use API, feeding you
 
 ```javascript
 await consumer.run({
-    eachMessage: async ({ topic, partition, message, heartbeat }) => {
+    eachMessage: async ({ topic, partition, message }) => {
         console.log({
             key: message.key.toString(),
             value: message.value.toString(),
